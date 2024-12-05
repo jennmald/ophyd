@@ -15,7 +15,7 @@ sudo systemctl restart docker
 
 AD_DOCKERIMAGE="prjemian/synapps-6.1-ad-3.7:latest"
 MOTOR_DOCKERIMAGE="ghcr.io/epics-containers/ioc-motorsim-runtime:2024.9.1"
-PE_DOCKERIMAGE="ghcr.io/epics-containers/ioc-adsimdetector:latest"
+PE_DOCKERIMAGE="ghcr.io/epics-containers/ioc-adsimdetector-runtime:2024.11.1"
 
 docker pull ${AD_DOCKERIMAGE}
 docker pull ${MOTOR_DOCKERIMAGE}
