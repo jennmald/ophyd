@@ -14,12 +14,12 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker
 
 AD_DOCKERIMAGE="prjemian/synapps-6.1-ad-3.7:latest"
-MOTOR_DOCKERIMAGE="ghrc.io:epics-containers/ioc-motorsim-runtime:2024.9.1"
-PE_DOCKERIMAGE="ghrc.io:epics-containers/ioc-adsimdetector:latest"
+MOTOR_DOCKERIMAGE="ghrc.io/epics-containers/ioc-motorsim-runtime:2024.9.1"
+PE_DOCKERIMAGE="ghrc.io/epics-containers/ioc-adsimdetector:latest"
 
-#docker pull ${AD_DOCKERIMAGE}
+docker pull ${AD_DOCKERIMAGE}
 docker pull ${MOTOR_DOCKERIMAGE}
-#docker pull ${PE_DOCKERIMAGE}
+docker pull ${PE_DOCKERIMAGE}
 
 mkdir -p /tmp/ophyd_AD_test/
 
